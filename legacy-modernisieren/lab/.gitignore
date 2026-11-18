@@ -1,0 +1,5 @@
+lib/*.jar
+evidence/
+**/__pycache__/
+*.class
+*.jar

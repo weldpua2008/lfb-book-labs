@@ -1,0 +1,26 @@
+{
+  "reference_date": "2026-11-18",
+  "scope": "Observed author/reference execution, not production validation or reader-environment acceptance",
+  "postgresql": {
+    "cases": "24/24 pass",
+    "accepted_summary_sha256": "4e1ee87c8837b8565ad6efb0404c89d887b2ee5345a9d43e344c1c09edc8be93",
+    "reference_source_manifest_sha256": "faf6d9b0861fae4780b7f4a67eb15dd009f4a4885e1dd1d7a77f5f64bba190c4",
+    "later_changes": "Public README path and license notice only; executable source unchanged from this reference"
+  },
+  "legacy": {
+    "groups": "22/22 pass",
+    "failed": 0,
+    "reference_results_sha256": "a80d7d898f78a4128d55b4d94bde49fb653a2330180a9b75ff33e039c3eda347",
+    "jar_sha256": "f1d329bca8436f32cec1316ae2f18f764d3d66e84de3de1252e94bf819f8d4f9",
+    "source_set_sha256": "6442091ef34685f72ea50db4fcf716455483ea464b38cfdc843e51c46fd686b9",
+    "later_changes": "Documentation, license and version-inventory corrections; executable source unchanged from this reference",
+    "known_limit": "A crash after external shipping acceptance but before local confirmation can leave AUTHORIZED/PENDING. Subsequent cancellation can incorrectly release stock. This teaching defect remains; normal-cancellation tests are not evidence that this crash path is safe. See lab README and contract."
+  },
+  "not_included": [
+    "Private raw logs",
+    "Manuscripts",
+    "Database backups",
+    "Third-party binaries",
+    "Account data"
+  ]
+}

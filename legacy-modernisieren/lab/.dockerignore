@@ -1,0 +1,6 @@
+*
+!Dockerfile
+!src/
+!src/**
+!lib/
+!lib/postgresql-42.7.14.jar

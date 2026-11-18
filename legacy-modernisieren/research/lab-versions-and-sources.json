@@ -1,0 +1,109 @@
+{
+  "as_of": "2026-11-18",
+  "company": "Havelblick Technikservice; entirely fictional",
+  "original_code_license": "0BSD",
+  "stack": [
+    {
+      "component": "Eclipse Temurin JDK",
+      "version": "21.0.13+9-LTS",
+      "image": "eclipse-temurin:21.0.13_9-jdk-noble@sha256:06c1f157dacf6b68198bd9a4186dd4c34ef24e65d7bbbe2a0cf8e62571ad38c9",
+      "origin": "https://hub.docker.com/_/eclipse-temurin",
+      "primary_version_source": "https://adoptium.net/news/2026/10/eclipse-temurin-17021-21013-2505-2701-available",
+      "support_source": "https://adoptium.net/support",
+      "license": "GPL-2.0-with-classpath-exception plus included notices",
+      "redistributed": false,
+      "acquisition": "official container pull, digest pinned",
+      "observed_runtime": "openjdk version \"21.0.13\" 2026-10-20 LTS\nOpenJDK Runtime Environment Temurin-21.0.13+9 (build 21.0.13+9-LTS)\nOpenJDK 64-Bit Server VM Temurin-21.0.13+9 (build 21.0.13+9-LTS, mixed mode, sharing)"
+    },
+    {
+      "component": "PostgreSQL",
+      "version": "18.7",
+      "image": "postgres:18.7@sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc",
+      "origin": "https://hub.docker.com/_/postgres",
+      "primary_version_source": "https://www.postgresql.org/docs/18/release-18-7.html",
+      "license": "PostgreSQL License plus image base notices",
+      "license_source": "https://www.postgresql.org/about/licence/",
+      "redistributed": false,
+      "acquisition": "official container pull, digest pinned; tested arm64 digest",
+      "observed_runtime": "PostgreSQL 18.7 (Debian 18.7-1.pgdg13+2) on aarch64-unknown-linux-gnu, compiled by gcc (Debian 14.2.0-19) 14.2.0, 64-bit"
+    },
+    {
+      "component": "pgJDBC",
+      "version": "42.7.14",
+      "origin": "https://jdbc.postgresql.org/download/postgresql-42.7.14.jar",
+      "primary_version_source": "https://jdbc.postgresql.org/download/",
+      "sha256": "73914527305a40cce504b0d3d90b23caf565136912d607ae8ae7c5895512332c",
+      "license": "BSD-2-Clause",
+      "license_source": "https://github.com/pgjdbc/pgjdbc/blob/REL42.7.14/LICENSE",
+      "redistributed": false,
+      "acquisition": "official download at build time; fixed SHA-256 enforced"
+    },
+    {
+      "component": "OnGres SCRAM client/common",
+      "version": "3.2",
+      "origin": "embedded in original pgJDBC42.7.14 jar",
+      "license": "original BSD license files extracted under lab/licenses",
+      "redistributed": "license texts only; no binaries"
+    },
+    {
+      "component": "OnGres SASLprep/Stringprep",
+      "version": "2.2",
+      "origin": "embedded in original pgJDBC42.7.14 jar",
+      "license": "original BSD license files extracted under lab/licenses",
+      "redistributed": "license texts only; no binaries"
+    },
+    {
+      "component": "Python",
+      "version_observed": "3.14.6",
+      "origin": "https://www.python.org/",
+      "license": "PSF and bundled notices",
+      "redistributed": false,
+      "third_party_packages": [],
+      "observation_scope": "Host Python used for the documented reference orchestration; Python runtime is not included in the source package."
+    },
+    {
+      "component": "Build tools",
+      "version": "javac and jar from the same pinned JDK21.0.13+9 image",
+      "redistributed": false,
+      "maven_gradle_used": false
+    }
+  ],
+  "primary_api_sources": [
+    {
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/java.base/java/math/BigDecimal.html",
+      "section": "class contract, rounding, scale",
+      "supports": "decimal arithmetic and explicit rounding; Havelblick rounding order is our synthetic rule"
+    },
+    {
+      "url": "https://docs.oracle.com/en/java/javase/21/docs/api/jdk.httpserver/com/sun/net/httpserver/HttpServer.html",
+      "section": "class contract and request handlers",
+      "supports": "bounded local JDK HTTP fixture, not production server certification"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/sql-select.html",
+      "section": "locking clause",
+      "supports": "row-lock and SKIP LOCKED syntax; not an exactly-once guarantee"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/explicit-locking.html",
+      "section": "advisory and row/table locks",
+      "supports": "explicit locking boundaries used in local fixture"
+    },
+    {
+      "url": "https://www.postgresql.org/docs/18/transaction-iso.html",
+      "section": "READ COMMITTED and transaction visibility",
+      "supports": "transactional visibility context; concurrent protocols still need tests"
+    },
+    {
+      "url": "https://spdx.org/licenses/0BSD.html",
+      "section": "license text",
+      "supports": "user-selected original-code license"
+    }
+  ],
+  "verification_boundary": "Versions checked against targeted official sections and observed containers. Not every upstream page was read fully; no production deployment or blanket security audit is claimed.",
+  "platform_tested": "Docker Desktop / Linux aarch64 containers on macOS",
+  "resource_limit_bytes": 1744830464,
+  "original_source_set_sha256": "6442091ef34685f72ea50db4fcf716455483ea464b38cfdc843e51c46fd686b9",
+  "jar_rebuild_sha256": "f1d329bca8436f32cec1316ae2f18f764d3d66e84de3de1252e94bf819f8d4f9",
+  "runtime_binaries_in_public_release": false
+}

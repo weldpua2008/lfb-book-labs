@@ -1,0 +1,12 @@
+{
+  "stage": "01-price-attempt",
+  "kind": "local executable stage profile; preserved implementations in shared source tree, not historical customer code or git checkout",
+  "entry_point": "havelblick.Main",
+  "selection": "STAGE=01-price-attempt",
+  "source_roots": [
+    "../../src"
+  ],
+  "price_implementation": "havelblick.pricing.PriceRules.failedEarlyRounding",
+  "outbox_enabled": false,
+  "replacement_enabled": false
+}

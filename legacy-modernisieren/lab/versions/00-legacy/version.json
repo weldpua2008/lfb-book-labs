@@ -1,0 +1,12 @@
+{
+  "stage": "00-legacy",
+  "kind": "local executable stage profile; preserved implementations in shared source tree, not historical customer code or git checkout",
+  "entry_point": "havelblick.Main",
+  "selection": "STAGE=00-legacy",
+  "source_roots": [
+    "../../src"
+  ],
+  "price_implementation": "havelblick.legacy.LegacyPrice",
+  "outbox_enabled": false,
+  "replacement_enabled": false
+}

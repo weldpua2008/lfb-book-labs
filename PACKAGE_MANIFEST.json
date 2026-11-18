@@ -1,0 +1,516 @@
+{
+  "repository": "weldpua2008/lfb-book-labs",
+  "prepared_for": "independent source and license review",
+  "original_spdx_license": "0BSD",
+  "files": [
+    {
+      "path": "postgresql-sicher-aendern/run_lab.py",
+      "bytes": 5162,
+      "sha256": "728fa5604e672147017add35f5e48c8af7d655de1f54d3cf76ef663d8c82f365",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/lib.py",
+      "bytes": 18930,
+      "sha256": "c6413cc1edb91e82e37464300ad1bd48a97c7af61566ec7213789853effb52d7",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/cases/__init__.py",
+      "bytes": 64,
+      "sha256": "0085d1cad2d36fc8ebcc8fe1f1597a96db311933bb7dafc52d5aac1b534208ae",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/cases/core.py",
+      "bytes": 14077,
+      "sha256": "ecc74524568e47167e0e1aebf0b65bb76ca5cfe487fc2fb0b1f3d433184fb3eb",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/cases/migrations.py",
+      "bytes": 22519,
+      "sha256": "8c5e22f72ba43ac46c1bb27d8ff9b07bc3758bc96a9f8034e871fed5f69531e1",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/cases/performance.py",
+      "bytes": 8797,
+      "sha256": "3dbd9becd576c258e1568f11a4c4cdf5db29f3e45e8e3109b54a01dc5955f589",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/cases/upgrades.py",
+      "bytes": 19242,
+      "sha256": "4d59eb767d0de9338863e89f43c0481cb71267f9c5229102840df841ca168aaf",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/fixture.sql",
+      "bytes": 4238,
+      "sha256": "8f4d8becdc4450e7846685278518ce832bacde71f5b368344cdc5b42b5290e5c",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/fingerprint.sql",
+      "bytes": 1829,
+      "sha256": "05cf302f900d0589a5f53cad0b673777fe6d1af9acb636141f623f0d9625f8ab",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/expand.sql",
+      "bytes": 752,
+      "sha256": "73640ef0262b476d8063f74fc33d93cd6d194d32338f23ebcdc8fc57397646b1",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/backfill_batch.sql",
+      "bytes": 212,
+      "sha256": "037f6e38c02c19d5c5a817d22ad8d1b959dd3c6153c7b9951276d983bafbc81a",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/tests/test_lab.py",
+      "bytes": 3069,
+      "sha256": "01ed9a339f5fb653c30b3f37a6b2b28e59b97dbf31606874540be6ff5f037001",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/Dockerfile.upgrade",
+      "bytes": 506,
+      "sha256": "5bcebdec5d1edc4ea9f73547421d61e99a8980ccac6a4b85b3a7e4ab5413b876",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/.dockerignore",
+      "bytes": 32,
+      "sha256": "98134d2cffd9eefc87ffd3a0b4a927b668b658ef9645bc818de4b93f9b5456a3",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/images.lock.json",
+      "bytes": 597,
+      "sha256": "2d809eeac198c3860018cde5ae0a4037bc0771ebc357626d2fc7c548dfa58356",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/chapter-map.json",
+      "bytes": 19609,
+      "sha256": "44988743bba5ea3db1c8ba199b2c48d45022e58350f6025df22ee7a122144015",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/README.md",
+      "bytes": 5451,
+      "sha256": "06a8885c638bf32e3de5a7c259a6b7301628f3071b3c5c826023bc3a9cfa9ea7",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/THIRD_PARTY_NOTICES.md",
+      "bytes": 3819,
+      "sha256": "10ef54acc7f3fe1a461ef4309b8f999826278f87e98181e229308771f51633f0",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "LICENSE",
+      "bytes": 624,
+      "sha256": "e81e2e6cad63fda42ebe09a98294d920ae6f2b4b1e857d5bf72f40d88e764fe6",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": ".gitignore",
+      "bytes": 72,
+      "sha256": "2c73a19281205c179aa59080e3ab60d47fabaf6df9e71782d07c5bb6310a3474",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/money_roles.sql",
+      "bytes": 1091,
+      "sha256": "19b02330de8f2cfdcee363c4b3e4f134baf1adf61815d14db91f7ae731e0c4cb",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/money_batch_function.sql",
+      "bytes": 1910,
+      "sha256": "edc0d273e7d4f05fdbbab75c8b602389bd717c9f74ed12d152bbe636d0ca8574",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "postgresql-sicher-aendern/sql/money_acceptance.sql",
+      "bytes": 976,
+      "sha256": "56b163b28605be51b008187d72ef63aea931c35afa19fa0d4b26612e4369be2a",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation; upstream licenses referenced separately"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/Main.java",
+      "bytes": 12634,
+      "sha256": "e9155303a84d5459d64e5d4157b822e548ec61920683d873d65c86dc9a4faf63",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/ReportJob.java",
+      "bytes": 2227,
+      "sha256": "733e3516058f6e0b7e3edbdc98b90eaa1aaead66346dda79b96b5322a78aca9f",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/SelfTest.java",
+      "bytes": 3195,
+      "sha256": "314b50318aead1aa649b13e2506190c81bc5bd790aaf242ec9af1b960079e137",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/Db.java",
+      "bytes": 1558,
+      "sha256": "0663202da8a5c55a3793e5f22af1ef438afb4bc9aa671c7cefc1191b029fb5b2",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/Json.java",
+      "bytes": 4376,
+      "sha256": "4b104ccca5146e62a822db9adc96d7cb2ffa76a5ff5963616554739b6ed4a2d8",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/OrderService.java",
+      "bytes": 7366,
+      "sha256": "e4ff897247cf56081d548dbdcde298b7e266f21bacf2b18e6db7d4096e67245b",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/PaymentResponseContract.java",
+      "bytes": 469,
+      "sha256": "43a1668b692f79919d6d5808f8158db5328ec8fc07dbc92a948ac93d36f4c4f0",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/Ports.java",
+      "bytes": 710,
+      "sha256": "c6d0b07affd80a086db7eb6492817b2c069af850d946d140e380a577fe1917d8",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/core/Remote.java",
+      "bytes": 2280,
+      "sha256": "7725b10f5f2f1b67929b3ffffbf04deb365e03c045299885af721e2685a7ce34",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/legacy/LegacyPrice.java",
+      "bytes": 1148,
+      "sha256": "34989d69b66e841ff95aa8571834cd5be5d2c87a4d6e9fe5b34d0379719157e0",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/modern/CompatibilityAdapter.java",
+      "bytes": 869,
+      "sha256": "dc9cd5c763d5c728077ca9fa16cfd6ced6fd678fca3f5799737d6068b7808ffb",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/pricing/PriceInternals.java",
+      "bytes": 259,
+      "sha256": "118d49cc7e184a4a0af5e624b5c57d94344d10d13aa75d8b887fdadfbeee201a",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/pricing/PriceRules.java",
+      "bytes": 1482,
+      "sha256": "b4d23d5fade837283f76d7a32ae2292c2e21de459306d6bf463fa66a946f9672",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/src/havelblick/shipping/OutboxWorker.java",
+      "bytes": 3028,
+      "sha256": "13549afd45277eaa55f3f58d2857f6b3ebd8ceab1b8c63ae4875c9065430d4d7",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/sql/001-schema.sql",
+      "bytes": 2903,
+      "sha256": "4139c220cec1ce3aad6840540f5d86095ba37da0e55f1eab1b7df9700d6e7972",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/sql/reset-data.sql",
+      "bytes": 357,
+      "sha256": "417a0fc78c093cd5f16bd3bac75d61e93f587260bde6706416782ab6b64415f2",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/00-legacy/run.sh",
+      "bytes": 70,
+      "sha256": "53ec0ec666ddceb324dd7bd16b577b36df9ced46622b0f1de7bcafdb005f1682",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/00-legacy/version.json",
+      "bytes": 395,
+      "sha256": "ecbc2286362aeae5bad89fd58cd8a3ae8acbd221383db07f3f13a947bdbac863",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/01-price/run.sh",
+      "bytes": 69,
+      "sha256": "0be1a8ed5e0418d81a7d7a015061afd22cf891fa78defdd937198f7ea7f30ec5",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/01-price/version.json",
+      "bytes": 399,
+      "sha256": "92a1e1b741170b3814c40c71d3a56ebe980eea5e4ea66163b2123cf762b9f1b3",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/01-price-attempt/run.sh",
+      "bytes": 77,
+      "sha256": "9a578eabf7cfb1c9321a75d38082835526c8977d0eb1d0ed2972a3424d074d87",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/01-price-attempt/version.json",
+      "bytes": 429,
+      "sha256": "cbe3d582fd7c69432f50db813cdbbac5d3d1f9c88d37568913f6414de0fb71b6",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/02-shipping/run.sh",
+      "bytes": 72,
+      "sha256": "34e6f3fca75b500d81e7ebdff273bc893c9cff909840dcc49a6d1321ee0a7ac2",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/02-shipping/version.json",
+      "bytes": 404,
+      "sha256": "c2b39522bba25667a708ecab2c09dd25b9f718b7739c9d89e7240f27a08e0a2b",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/03-replacement/run.sh",
+      "bytes": 75,
+      "sha256": "533bbb8a36926a9224693e465143cc3748123cea6441840c8d46f9ab73b09456",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/versions/03-replacement/version.json",
+      "bytes": 409,
+      "sha256": "b915bf41dd23ac205317355fdf24c7ff5571bb5c06955f59718b9c2d7459dc56",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/templates/modernisierungsdossier.md",
+      "bytes": 2770,
+      "sha256": "a62a299ff4e9596fa11264c2dcf2bb5811f7c4d8d41d379fc5e3e84cb936415d",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/licenses/META-INF/LICENSE",
+      "bytes": 1708,
+      "sha256": "08bb580d3cb8f9a4a05f008466a294fdb019e0e177d03a035d46f1eb94077de5",
+      "executable": false,
+      "license_scope": "Unchanged upstream license text"
+    },
+    {
+      "path": "legacy-modernisieren/lab/licenses/META-INF/licenses/com.ongres.scram/scram-client-3.2/META-INF/LICENSE",
+      "bytes": 1269,
+      "sha256": "7c89807167a03a92d2fbfc936aff4f87d8ce31434637381c89e38282c8c99198",
+      "executable": false,
+      "license_scope": "Unchanged upstream license text"
+    },
+    {
+      "path": "legacy-modernisieren/lab/licenses/META-INF/licenses/com.ongres.scram/scram-common-3.2/META-INF/LICENSE",
+      "bytes": 1269,
+      "sha256": "7c89807167a03a92d2fbfc936aff4f87d8ce31434637381c89e38282c8c99198",
+      "executable": false,
+      "license_scope": "Unchanged upstream license text"
+    },
+    {
+      "path": "legacy-modernisieren/lab/licenses/META-INF/licenses/com.ongres.stringprep/saslprep-2.2/META-INF/LICENSE",
+      "bytes": 1269,
+      "sha256": "5c49fc155ebccd206277e0d1f424aadbf365f0a9ccfb54d400d728a375d523f9",
+      "executable": false,
+      "license_scope": "Unchanged upstream license text"
+    },
+    {
+      "path": "legacy-modernisieren/lab/licenses/META-INF/licenses/com.ongres.stringprep/stringprep-2.2/META-INF/LICENSE",
+      "bytes": 1269,
+      "sha256": "5c49fc155ebccd206277e0d1f424aadbf365f0a9ccfb54d400d728a375d523f9",
+      "executable": false,
+      "license_scope": "Unchanged upstream license text"
+    },
+    {
+      "path": "legacy-modernisieren/lab/Dockerfile",
+      "bytes": 490,
+      "sha256": "8191f4a18b1f17471b22eaf4afa107b1297705bd727b8afdeb2276bdb2e9454a",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/compose.yaml",
+      "bytes": 2142,
+      "sha256": "d62d9dd02f07f2e232042b3b5e9bdc9acb9db3e33d009ca2105f79052b8afe4d",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/lab.sh",
+      "bytes": 965,
+      "sha256": "bc6bfc5526d74a3171634b1e8b553730d63bda4fbc6611350a96c28588a19102",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/README.md",
+      "bytes": 10067,
+      "sha256": "2e50bcded79e906321648e0b6abcc3639a0b962c13a5fcb9a18dacb937a40cce",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/LICENSE",
+      "bytes": 624,
+      "sha256": "e81e2e6cad63fda42ebe09a98294d920ae6f2b4b1e857d5bf72f40d88e764fe6",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/LICENSE-INVENTORY.md",
+      "bytes": 2272,
+      "sha256": "74a4a2404e4dccaf4d6108bde2ef1086d081449ecde78986525e44f2c5c89d5d",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/THIRD_PARTY_NOTICES.md",
+      "bytes": 2436,
+      "sha256": "bc3a59599218ce9a33240f48907d24ba5338d40b7023a4e9adadf4a9c14bcbb2",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/CHANGELOG.md",
+      "bytes": 2479,
+      "sha256": "75773a79456dc93d434432c5e8e13b8f06db08d331a0db5ae054b9904a0234fa",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/.gitignore",
+      "bytes": 50,
+      "sha256": "8f9e45143b879c66f8a3ef1a576e78804bcfcaaff337b7793389fb65b1c06069",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/.dockerignore",
+      "bytes": 62,
+      "sha256": "8173fcf7b0b8bad91313bd28b5778489c7b07f9885ff5e6c4441920ca66f57b3",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/scripts/fetch_dependencies.py",
+      "bytes": 963,
+      "sha256": "02594c8fb93baf883b327d1b29fc69321f4392442399ba2c2bc088de27351c74",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/scripts/run_scenarios.py",
+      "bytes": 26180,
+      "sha256": "9561a8b9df953f001a347196d981faa069152190fe17ce14a8e97e00c35799d5",
+      "executable": true,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/scripts/verify_price_boundaries.py",
+      "bytes": 1597,
+      "sha256": "4c2ab14ec4c10238522241a3cd68c633546f15a4f5004fa25fc7981e90aa0e7e",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab/scripts/write_manifest.py",
+      "bytes": 6426,
+      "sha256": "bce7ae1fcd8727db33608ca5f99398306002502d13b41079ad40efa9968b661b",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/lab-contract.md",
+      "bytes": 11175,
+      "sha256": "86ffd1a45fc7bed205c0ae8fa587c81886dcf9b2697bfe7ac814ce1f2840e705",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "legacy-modernisieren/research/lab-versions-and-sources.json",
+      "bytes": 5284,
+      "sha256": "d422d8505b0f4ae755f15743b283aabe83b05af546a54b1dca8eef298e58a2f3",
+      "executable": false,
+      "license_scope": "0BSD original code or original documentation"
+    },
+    {
+      "path": "README.md",
+      "bytes": 2711,
+      "sha256": "f61a751c89f479f6bd6fb690201599a5143c2e644847bf4cd54d8efa01e0d5fc",
+      "executable": false
+    },
+    {
+      "path": "REFERENCE_EXECUTION.json",
+      "bytes": 1442,
+      "sha256": "30452527ead2f39dc09d4f94297911f0da548cf39bce02c489216789ea740cc1",
+      "executable": false
+    }
+  ]
+}

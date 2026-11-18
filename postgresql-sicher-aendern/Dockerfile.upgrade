@@ -1,0 +1,7 @@
+FROM postgres@sha256:0d938e975177bef9f1f61f3f9dbcf2e0aa0a139568f66d3415ed8892eb97f6ac AS old
+FROM postgres@sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc
+LABEL de.lfb.lab="lfb_pg_book_20261118"
+# Both observed official images use Debian 13 (trixie), arm64, matching ICU 76.
+# No installer or downloaded third-party script; only official image binaries.
+COPY --from=old /usr/lib/postgresql/17 /usr/lib/postgresql/17
+COPY --from=old /usr/share/postgresql/17 /usr/share/postgresql/17

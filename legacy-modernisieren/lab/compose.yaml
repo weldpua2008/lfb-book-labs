@@ -1,0 +1,75 @@
+name: lfb_legacy_book_20261118
+x-app: &app
+  image: lfb_legacy_book_20261118:java21
+  mem_limit: 384m
+  cpus: 1
+  labels:
+    project: lfb_legacy_book_20261118
+  networks: [lab]
+  stop_grace_period: 2s
+  read_only: true
+  tmpfs: [/tmp:size=32m]
+  security_opt: [no-new-privileges:true]
+services:
+  db:
+    image: postgres:18.7@sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc
+    mem_limit: 768m
+    cpus: 1
+    labels: {project: lfb_legacy_book_20261118}
+    environment:
+      POSTGRES_DB: havelblick
+      POSTGRES_USER: hb_admin
+      POSTGRES_PASSWORD: local-lab-admin
+    volumes:
+      - pgdata:/var/lib/postgresql
+      - ./sql/001-schema.sql:/docker-entrypoint-initdb.d/001-schema.sql:ro
+    command: [postgres, -c, shared_buffers=128MB, -c, max_connections=32]
+    networks: [lab]
+    healthcheck:
+      test: [CMD-SHELL, pg_isready -U hb_admin -d havelblick]
+      interval: 1s
+      retries: 30
+  app:
+    <<: *app
+    build: .
+    command: [havelblick.Main, app]
+    ports: [127.0.0.1:18890:8080]
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/havelblick
+      DB_USER: hb_app
+      DB_PASSWORD: local-lab-app
+      STAGE: ${STAGE:-00-legacy}
+      FIXED_TIME: ${FIXED_TIME:-2026-01-15T09:30:00Z}
+      PAYMENT_URL: http://payment:8081
+      SHIPPING_URL: http://shipping:8082
+    depends_on:
+      db: {condition: service_healthy}
+  payment:
+    <<: *app
+    mem_limit: 256m
+    command: [havelblick.Main, payment]
+    ports: [127.0.0.1:18891:8081]
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/havelblick
+      DB_USER: hb_payment
+      DB_PASSWORD: local-lab-payment
+    depends_on:
+      db: {condition: service_healthy}
+  shipping:
+    <<: *app
+    mem_limit: 256m
+    command: [havelblick.Main, shipping]
+    ports: [127.0.0.1:18892:8082]
+    environment:
+      DB_URL: jdbc:postgresql://db:5432/havelblick
+      DB_USER: hb_shipping
+      DB_PASSWORD: local-lab-shipping
+    depends_on:
+      db: {condition: service_healthy}
+networks:
+  lab:
+    internal: false
+    labels: {project: lfb_legacy_book_20261118}
+volumes:
+  pgdata:
+    labels: {project: lfb_legacy_book_20261118}

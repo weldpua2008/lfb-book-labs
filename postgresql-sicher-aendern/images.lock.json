@@ -1,0 +1,16 @@
+{
+  "18.7": {
+    "tag": "postgres:18.7",
+    "repo_digest": "postgres@sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc",
+    "image_id": "sha256:2ea8630df176ad090ec92136dee850397c5af8781e4bcf2e4162593691c61bbc",
+    "architecture": "arm64",
+    "size_bytes": 694789247
+  },
+  "17.12": {
+    "tag": "postgres:17.12",
+    "repo_digest": "postgres@sha256:0d938e975177bef9f1f61f3f9dbcf2e0aa0a139568f66d3415ed8892eb97f6ac",
+    "image_id": "sha256:0d938e975177bef9f1f61f3f9dbcf2e0aa0a139568f66d3415ed8892eb97f6ac",
+    "architecture": "arm64",
+    "size_bytes": 690126411
+  }
+}

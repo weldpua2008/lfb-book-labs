@@ -1,0 +1,12 @@
+{
+  "stage": "02-shipping",
+  "kind": "local executable stage profile; preserved implementations in shared source tree, not historical customer code or git checkout",
+  "entry_point": "havelblick.Main",
+  "selection": "STAGE=02-shipping",
+  "source_roots": [
+    "../../src"
+  ],
+  "price_implementation": "havelblick.pricing.PriceRules.quote",
+  "outbox_enabled": true,
+  "replacement_enabled": false
+}
