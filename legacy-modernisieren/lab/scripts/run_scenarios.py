@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Executed synthetic scenarios, not simulated result fixtures. Requires Python stdlib only."""
+import sys
+if sys.flags.optimize:
+ raise SystemExit('Scenario checks require Python without -O/-OO or PYTHONOPTIMIZE; no fixture action was started.')
 import concurrent.futures,datetime,hashlib,json,os,pathlib,subprocess,time,urllib.request,urllib.error
 ROOT=pathlib.Path(__file__).resolve().parents[1]
 E=ROOT/'evidence';E.mkdir(exist_ok=True)

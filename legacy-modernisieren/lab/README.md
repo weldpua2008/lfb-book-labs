@@ -12,7 +12,18 @@ Im öffentlichen Begleitquellcode zuerst in `legacy-modernisieren/lab` wechseln.
 ./lab.sh test
 ```
 
+Die Szenariosuite und die separate Preisgrenzenprüfung verwenden Python-Assertions. Deshalb verweigern beide Skripte einen Start mit `-O`, `-OO` oder aktivem `PYTHONOPTIMIZE`, bevor sie Daten zurücksetzen, Dateien erzeugen oder HTTP aufrufen. Führen Sie diese Prüfungen ohne Python-Optimierung aus; ein stilles Weglassen der Bedingungen wäre keine gültige Abnahme.
+
 Die Suite wartet auf die drei HTTP-Dienste, setzt nur ihre eigenen synthetischen Daten zurück, wechselt die Ausführungsstufen und erzeugt [evidence/results.json](evidence/results.json), [evidence/results.md](evidence/results.md) und [evidence/raw-events.json](evidence/raw-events.json). Ein Test gilt erst mit seinem tatsächlichen Ergebnis als bestanden. Die Kapitelzuordnung steht im Feld `chapters` der einzelnen Testgruppen in der erzeugten Datei `evidence/results.json`.
+
+Die gesonderten sieben Preisgrenzen und das lokale Laufzeitmanifest erzeugen Sie anschließend mit:
+
+```sh
+python3 scripts/verify_price_boundaries.py
+python3 scripts/write_manifest.py
+```
+
+Der zweite Befehl erfasst den tatsächlich gestarteten JDK-/Datenbankstand, den JAR-Hash und die benannte Quelldateimenge. Er schreibt `evidence/runtime-manifest.json`, ergänzt die lokalen Ergebnisse und aktualisiert Ihre lokale Datei `../research/lab-versions-and-sources.json`. Deren Hash kann danach vom unveränderten Downloadpaket abweichen; der Downloadhash wird vor dem eigenen Lauf geprüft. Die Quelldateimenge dieses Laufzeitmanifests ist im Skript ausdrücklich aufgezählt und umfasst nicht automatisch alle Dateien des Repositorys.
 
 `./lab.sh reset-data` löscht ausschließlich die Daten dieses Fixtures. `./lab.sh reset` entfernt die Compose-Dienste und ihr eigenes Datenvolume und initialisiert neu. `./lab.sh down` stoppt/entfernt nur die Dienste und das eigene Netzwerk; das Volume bleibt erhalten. Es werden keine anderen Container angehalten oder bereinigt.
 

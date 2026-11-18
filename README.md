@@ -20,4 +20,4 @@ Die Dateimanifeste ordnen den ursprünglichen Dateien 0BSD zu, ohne dafür ausf�
 
 ## Fassungen
 
-Die erste Buchausgabe verwendet getrennte Releasepakete mit den Tags `postgresql-1.0.0` und `legacy-1.0.0`. Verwenden Sie die im jeweiligen Buch genannte Fassung und prüfen Sie den SHA-256 des ZIP-Archivs gegen dessen SHA256SUMS. Der aktuelle Entwicklungszweig kann später abweichen. Die öffentlichen Pakete enthalten keine privaten Laufprotokolle; eigene vollständige Ergebnisse entstehen lokal beim Testlauf.
+Die erste Buchausgabe verwendet getrennte Releasepakete mit den Tags `postgresql-1.0.1` und `legacy-1.0.1`. Verwenden Sie die im jeweiligen Buch genannte Fassung und prüfen Sie den SHA-256 des ZIP-Archivs gegen dessen SHA256SUMS. Der aktuelle Entwicklungszweig kann später abweichen. Die öffentlichen Pakete enthalten keine privaten Laufprotokolle; eigene vollständige Ergebnisse entstehen lokal beim Testlauf.

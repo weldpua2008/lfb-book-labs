@@ -105,5 +105,6 @@
   "resource_limit_bytes": 1744830464,
   "original_source_set_sha256": "6442091ef34685f72ea50db4fcf716455483ea464b38cfdc843e51c46fd686b9",
   "jar_rebuild_sha256": "f1d329bca8436f32cec1316ae2f18f764d3d66e84de3de1252e94bf819f8d4f9",
-  "runtime_binaries_in_public_release": false
+  "runtime_binaries_in_public_release": false,
+  "source_set_hash_scope": "Historical executed reference before the later early Python-optimization guards. Current downloadable file bytes are inventoried in PACKAGE_MANIFEST.json; write_manifest.py records the reader execution and its explicitly listed source set."
 }

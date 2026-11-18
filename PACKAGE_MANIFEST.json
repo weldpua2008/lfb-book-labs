@@ -411,8 +411,8 @@
     },
     {
       "path": "legacy-modernisieren/lab/README.md",
-      "bytes": 10067,
-      "sha256": "2e50bcded79e906321648e0b6abcc3639a0b962c13a5fcb9a18dacb937a40cce",
+      "bytes": 11175,
+      "sha256": "6cc70912a07d9b70bffdd874391af2e22b9f256b4630cc4cf748dc928ce9b5fd",
       "executable": false,
       "license_scope": "0BSD original code or original documentation"
     },
@@ -467,22 +467,22 @@
     },
     {
       "path": "legacy-modernisieren/lab/scripts/run_scenarios.py",
-      "bytes": 26180,
-      "sha256": "9561a8b9df953f001a347196d981faa069152190fe17ce14a8e97e00c35799d5",
+      "bytes": 26331,
+      "sha256": "d8a7981a9a5bfbbbdc399bc3e6f3633eb1df8bb3f99a459ea1ad4d7a5ec9dd2f",
       "executable": true,
       "license_scope": "0BSD original code or original documentation"
     },
     {
       "path": "legacy-modernisieren/lab/scripts/verify_price_boundaries.py",
-      "bytes": 1597,
-      "sha256": "4c2ab14ec4c10238522241a3cd68c633546f15a4f5004fa25fc7981e90aa0e7e",
+      "bytes": 1743,
+      "sha256": "8512fae8901eacd304b1b427b75587250aff1ee62292953ce7eaf16f260ca1a8",
       "executable": false,
       "license_scope": "0BSD original code or original documentation"
     },
     {
       "path": "legacy-modernisieren/lab/scripts/write_manifest.py",
-      "bytes": 6426,
-      "sha256": "bce7ae1fcd8727db33608ca5f99398306002502d13b41079ad40efa9968b661b",
+      "bytes": 6341,
+      "sha256": "84c40d9164d94bd2d639bba5c48285998ecea8ba2fa3ea9e5809aee6c8b4f54b",
       "executable": false,
       "license_scope": "0BSD original code or original documentation"
     },
@@ -495,21 +495,21 @@
     },
     {
       "path": "legacy-modernisieren/research/lab-versions-and-sources.json",
-      "bytes": 5284,
-      "sha256": "d422d8505b0f4ae755f15743b283aabe83b05af546a54b1dca8eef298e58a2f3",
+      "bytes": 5554,
+      "sha256": "0df59ea01773abf8f2f0ce2f6f0dfef2fa6c64adc4f0f4ffb210d955dd8bdefa",
       "executable": false,
       "license_scope": "0BSD original code or original documentation"
     },
     {
       "path": "README.md",
       "bytes": 2711,
-      "sha256": "f61a751c89f479f6bd6fb690201599a5143c2e644847bf4cd54d8efa01e0d5fc",
+      "sha256": "a51dab52c6bef1c7e86995d9af64d8f7209af5f0730a2bb190d0000e37bd3ed5",
       "executable": false
     },
     {
       "path": "REFERENCE_EXECUTION.json",
-      "bytes": 1442,
-      "sha256": "30452527ead2f39dc09d4f94297911f0da548cf39bce02c489216789ea740cc1",
+      "bytes": 1557,
+      "sha256": "8915ac1861d4f4efc799b30808bfcc1bbf1295d6703f970c0091b11235c65f34",
       "executable": false
     }
   ]

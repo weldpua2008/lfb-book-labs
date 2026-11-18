@@ -13,7 +13,7 @@
     "reference_results_sha256": "a80d7d898f78a4128d55b4d94bde49fb653a2330180a9b75ff33e039c3eda347",
     "jar_sha256": "f1d329bca8436f32cec1316ae2f18f764d3d66e84de3de1252e94bf819f8d4f9",
     "source_set_sha256": "6442091ef34685f72ea50db4fcf716455483ea464b38cfdc843e51c46fd686b9",
-    "later_changes": "Documentation, license and version-inventory corrections; executable source unchanged from this reference",
+    "later_changes": "Documentation, license and version-inventory corrections; early optimization guards added to Python test entrypoints. Java application and scenario bodies unchanged; final clean-download execution is recorded separately.",
     "known_limit": "A crash after external shipping acceptance but before local confirmation can leave AUTHORIZED/PENDING. Subsequent cancellation can incorrectly release stock. This teaching defect remains; normal-cancellation tests are not evidence that this crash path is safe. See lab README and contract."
   },
   "not_included": [

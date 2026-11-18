@@ -1,5 +1,8 @@
 #!/usr/bin/env python3
 """Independent Decimal reference and actual HTTP quote boundary observations."""
+import sys
+if sys.flags.optimize:
+ raise SystemExit('Price checks require Python without -O/-OO or PYTHONOPTIMIZE; no HTTP request was started.')
 from decimal import Decimal,ROUND_HALF_UP
 from pathlib import Path
 import urllib.request,json
